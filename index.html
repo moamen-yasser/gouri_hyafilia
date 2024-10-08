@@ -31,12 +31,12 @@
                 <form action="" method="">
                     <div class="line_one global_lines top">
                         <div class="indiv">
-                            <label for="fullName">Full name</label>
+                            <label for="fullName">Full name <span>*</span></label>
                                 <br>
                             <input type="text" id="fullName" placeholder="Enter Your Full name" required name="fullName" value="" autocomplete="on">
                         </div>
                         <div class="innerdiv">
-                            <label for="mobilNumber">Mobile number</label>
+                            <label for="mobilNumber">Mobile number <span>*</span></label>
                                 <br>
                             <input type="number" id="mobilNumber" placeholder="Enter Your mobile number" required name="mobilNumber"value="" autocomplete="on">
                         </div>
@@ -44,7 +44,7 @@
     
                     <div class="line_one global_lines">
                         <div class="indiv">
-                            <label for="email">Email</label>
+                            <label for="email">Email <span>*</span></label>
                                 <br>
                             <input type="text" id="email" placeholder="Enter Your Email" required name="email"value="" autocomplete="off">
                         </div>
@@ -54,8 +54,9 @@
                             <input type="text" id="hospital" placeholder="Enter Your Hospital name" required name="hospital" value="" autocomplete="on" >
                         </div>
                     </div>
-    
-                    <div class="line_one global_lines">
+
+                    <!-- hidden -->
+                    <div class="line_one global_lines" style="display: none;"> 
                         <div class="indiv">
                             <label for="SCFHSnumber">SCFHS number</label>
                                 <br>
@@ -67,31 +68,27 @@
                             <input type="text" id="IDnumber" placeholder="Enter Your ID number" required name="IDnumber" value=""autocomplete="on" >
                         </div>
                     </div>
+                    <!-- hidden -->
+
     
                     <div class="line_one global_lines">
-                        <div class="indiv">
+                        <!-- hidden -->
+                        <div class="indiv" style="display: none;">
                             <label for="Speciality">Speciality</label>
                                 <br>
                             <input type="text" id="Speciality" placeholder="Enter Your Speciality" required name="Speciality"value="" autocomplete="on">
                         </div>
+                        <!-- hidden -->
                         <div class="innerdiv">
-                            <label for="Sector">City</label>
+                            <label for="Sector">Partner <span>*</span></label>
                                 <br>
                                 <div class="select" id="mySelect">
                                     <select id="Sector" name="sector" class="custom-select">
                                         <div class="option">
-                                            <option value=""class ="optiondis" disabled selected>Choose City</option>
-                                            <option value="private" class="li">Saudi Arabia</option>
+                                            <option value=""class ="optiondis" disabled selected>Are you partner</option>
+                                            <option value="private" class="li">Yes</option>
                                             <hr>
-                                            <option value="private" class="li">Egypt</option>
-                                            <hr>
-                                            <option value="public" class="li">Spain</option>
-                                            <hr>
-                                            <option value="public" class="li">France</option>
-                                            <hr>
-                                            <option value="public" class="li">Germany</option>
-                                            <hr>
-                                            <option value="public" class="li">USA</option>
+                                            <option value="private" class="li">No</option>
                                         </div>
                                     </select>
                                 </div>

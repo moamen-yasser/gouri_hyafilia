@@ -66,6 +66,11 @@ main {
     color: #FFFFFF;
     padding-left: 5px;
 }
+.all_form label span{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(169, 4, 4);
+}
 .all_form input{
     width: 600px;
     height: 60px;
